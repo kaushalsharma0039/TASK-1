@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Data Fetcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Data Fetcher</h1>
+    </header>
+    <main>
+      <h2>Check Weather</h2>
+      <p>Enter a city to view the current weather:</p>
+      <input type="text" id="city-input" placeholder="City name" />
+      <button onclick="fetchWeather()">Get Weather</button>
+      <div id="weather-output" class="weather-info" style="display: none">
+        <h3>Weather in <span id="city-name"></span></h3>
+        <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+        <p><strong>Description:</strong> <span id="description"></span></p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
